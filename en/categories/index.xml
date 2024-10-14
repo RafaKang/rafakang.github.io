@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Wistoria</title>
-        <link>https://example.com/en/categories/</link>
+        <link>https://wistoria.github.io/en/categories/</link>
         <description>Recent content in Categories on Wistoria</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>KSY</copyright><atom:link href="https://example.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>KSY</copyright><atom:link href="https://wistoria.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
