@@ -2,16 +2,16 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A 题目链接\n串$s$和$t$如果具有一段公共前缀，那么可以用1s的时间复制这段前缀。找到这个最长的公共前缀即可\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 int Main() { std::string s, t; std::cin &gt;&gt; s &gt;&gt; t; int n = s.length(), m = t.length(); int ans = n + m; for (int i = 0; i &lt; std::min(n, m); ++i) { if (s[i] != t[i]) break; else ans = std::min(ans, (i + 1) + 1 + (n - i - 1) + (m - i - 1)); } std::cout &lt;&lt; ans &lt;&lt; std::endl; return 0; } B 题目链接\n">
-<title>CodeForces Educational Round 170 A~F题解</title>
+<title>Codeforces Educational Round 170 A~F题解</title>
 
 <link rel='canonical' href='https://rafakang.github.io/p/codeforces-educational-round-170-a~f%E9%A2%98%E8%A7%A3/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="CodeForces Educational Round 170 A~F题解">
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Codeforces Educational Round 170 A~F题解">
 <meta property='og:description' content="A 题目链接\n串$s$和$t$如果具有一段公共前缀，那么可以用1s的时间复制这段前缀。找到这个最长的公共前缀即可\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 int Main() { std::string s, t; std::cin &gt;&gt; s &gt;&gt; t; int n = s.length(), m = t.length(); int ans = n + m; for (int i = 0; i &lt; std::min(n, m); ++i) { if (s[i] != t[i]) break; else ans = std::min(ans, (i + 1) + 1 + (n - i - 1) + (m - i - 1)); } std::cout &lt;&lt; ans &lt;&lt; std::endl; return 0; } B 题目链接\n">
 <meta property='og:url' content='https://rafakang.github.io/p/codeforces-educational-round-170-a~f%E9%A2%98%E8%A7%A3/'>
 <meta property='og:site_name' content='Wistoria'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='题解' /><meta property='article:published_time' content='2024-10-15T16:59:31&#43;08:00'/><meta property='article:modified_time' content='2024-10-15T16:59:31&#43;08:00'/><meta property='og:image' content='https://rafakang.github.io/p/codeforces-educational-round-170-a~f%E9%A2%98%E8%A7%A3/background.png' />
-<meta name="twitter:title" content="CodeForces Educational Round 170 A~F题解">
+<meta name="twitter:title" content="Codeforces Educational Round 170 A~F题解">
 <meta name="twitter:description" content="A 题目链接\n串$s$和$t$如果具有一段公共前缀，那么可以用1s的时间复制这段前缀。找到这个最长的公共前缀即可\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 int Main() { std::string s, t; std::cin &gt;&gt; s &gt;&gt; t; int n = s.length(), m = t.length(); int ans = n + m; for (int i = 0; i &lt; std::min(n, m); ++i) { if (s[i] != t[i]) break; else ans = std::min(ans, (i + 1) + 1 + (n - i - 1) + (m - i - 1)); } std::cout &lt;&lt; ans &lt;&lt; std::endl; return 0; } B 题目链接\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://rafakang.github.io/p/codeforces-educational-round-170-a~f%E9%A2%98%E8%A7%A3/background.png' />
     <link rel="shortcut icon" href="/will.ico" />
@@ -317,7 +317,7 @@
                         width="800" 
                         height="190" 
                         loading="lazy"
-                        alt="Featured image of post CodeForces Educational Round 170 A~F题解" />
+                        alt="Featured image of post Codeforces Educational Round 170 A~F题解" />
                 
             </a>
         </div>
@@ -336,7 +336,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/codeforces-educational-round-170-a~f%E9%A2%98%E8%A7%A3/">CodeForces Educational Round 170 A~F题解</a>
+            <a href="/p/codeforces-educational-round-170-a~f%E9%A2%98%E8%A7%A3/">Codeforces Educational Round 170 A~F题解</a>
         </h2>
     
         
@@ -1211,6 +1211,39 @@ $$dp[i][j]=\sum_{x=0}^{j} dp[i-1][j-x]*f[m][x]$$<p>枚举1牌的方案，玩家1
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/abc376%E9%A2%98%E8%A7%A3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/abc376%E9%A2%98%E8%A7%A3/background.5b083979f9df568f851cb0138a41f597_hu6169636122092541915.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post ABC376题解"
+                        
+                        data-hash="md5-Wwg5efnfVo&#43;FHLATikH1lw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">ABC376题解</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     
