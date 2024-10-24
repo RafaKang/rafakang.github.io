@@ -404,7 +404,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;cf2033g&#34;&gt;CF2033G
-&lt;/h2&gt;&lt;h3 id=&#34;题意-6&#34;&gt;题意
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codeforces.com/contest/2033/problem/G&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;题目链接&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题意-6&#34;&gt;题意
 &lt;/h3&gt;&lt;p&gt;有一棵以1为根的树，从节点$a$向子节点走不花费体力，向父亲走花费1单位的体力。&lt;/p&gt;
 &lt;p&gt;现在有$q$个询问，每次询问给出$v,k$，问从$v$开始，花费不超过$k$的体力最远能走多远。&lt;/p&gt;
 &lt;h3 id=&#34;解法-6&#34;&gt;解法
