@@ -575,6 +575,11 @@ v&amp;0\\
 &lt;p&gt;另外：如果$u,v$是关键边，则加上这条边,让$\frac{1}{d_u-1}(dp[v][0]+1)$也转移到$dp[u][1]$里，$\frac{1}{d_u-1}dp[v][1]$也转移到$dp[u][0]$里。并且要注意在$u,v$处结算一条向下的路径，贡献加到$ans$里。&lt;/p&gt;
 &lt;p&gt;然后在$u$处合并两个儿子的答案作为一条整路径的贡献加到$ans$里。
 具体实现看代码。&lt;/p&gt;
+&lt;p&gt;实际上有一个特别有意思的是：假设一条以关键边为两端的路径$p$，除去两端，路径上还有$q$个关键边，这条路径的点权积为$F$。&lt;/p&gt;
+&lt;p&gt;看看这个$F$怎么向答案做贡献。&lt;/p&gt;
+&lt;p&gt;枚举选择关键边的数量$i$，方案是$C_q^i&lt;em&gt;F$，容斥系数为$(-1)^{i-1}$。所以贡献总数是$\sum_{i=0}^q (-1)^{i-1}C_q^i&lt;/em&gt;F$。&lt;/p&gt;
+&lt;p&gt;把这个式子乘一个$-1$进去，发现是$\sum_{i=0}^q (-1)^{i}C_q^i&lt;em&gt;F=F&lt;/em&gt;(1+(-1))^q=0$。&lt;/p&gt;
+&lt;p&gt;所以实际上能为答案做贡献的，只有以关键边为两端，且中间再无其它关键边的路径，找这样的路径做统计就行（点分治、树上DP都可以做）。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
