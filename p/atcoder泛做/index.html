@@ -4700,7 +4700,36 @@ $$dp[0] * 2M^2-M^2$$<div class="highlight"><div class="chroma">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="arc185eadjacent-gcd">ARC185E.Adjacent GCD
+</div><h1 id="abc254frectangle-gcd">ABC254F.Rectangle GCD
+</h1><p>累了，做个水题。</p>
+<p>最大公约数是支持差分的。</p>
+<p>$gcd(a,b)=gcd(a,b-a)$</p>
+<p>这一步也叫更相减损之术，是我们中国数学家的智慧。</p>
+<p>我们考虑一个网格的公约数。</p>
+<p>先看一行的情况，假设行为$i$，列为$[c1,c2]$</p>
+<p>$gcd(a[i]+b[c1], a[i]+b[c1+1], &hellip; ,a[i]+b[c2])$</p>
+<p>当你去做差分的时候会发现$a[i]$被减掉了。</p>
+<p>就是</p>
+<p>$gcd(a[i]+b[c1], b[c1+1]-b[c1], &hellip;, b[c2]-b[c2-1])$</p>
+<p>前一个数是网格上一个点，后面就是$b$的差分数组的一个区间。</p>
+<p><img src="/p/atcoder%E6%B3%9B%E5%81%9A/image.png"
+	width="1252"
+	height="904"
+	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/image_hu1722367391632881689.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/image_hu9515741885819983690.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="138"
+		data-flex-basis="332px"
+	
+></p>
+<p>那么一次对网格的查询可以剖成红色的行（对应$b$的差分数组的区间）、绿色的列（对应$a$的差分数组的一个区间），以及蓝色的格子（左上角）。</p>
+<p>分别用区间查询数据结构（ST表，线段树）来做区间查询。</p>
+<p>因此一次查询操作要在$a$差分里做区间查询、$b$差分里做区间查询以及和左上角的数，用这三个数来做GCD。</p>
+<h1 id="arc185eadjacent-gcd">ARC185E.Adjacent GCD
 </h1><p>累了，做个水题。</p>
 
 </section>

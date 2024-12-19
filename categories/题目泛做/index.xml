@@ -4374,7 +4374,36 @@ $$dp[0] * 2M^2-M^2$$&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chro
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;arc185eadjacent-gcd&#34;&gt;ARC185E.Adjacent GCD
+&lt;/div&gt;&lt;h1 id=&#34;abc254frectangle-gcd&#34;&gt;ABC254F.Rectangle GCD
+&lt;/h1&gt;&lt;p&gt;累了，做个水题。&lt;/p&gt;
+&lt;p&gt;最大公约数是支持差分的。&lt;/p&gt;
+&lt;p&gt;$gcd(a,b)=gcd(a,b-a)$&lt;/p&gt;
+&lt;p&gt;这一步也叫更相减损之术，是我们中国数学家的智慧。&lt;/p&gt;
+&lt;p&gt;我们考虑一个网格的公约数。&lt;/p&gt;
+&lt;p&gt;先看一行的情况，假设行为$i$，列为$[c1,c2]$&lt;/p&gt;
+&lt;p&gt;$gcd(a[i]+b[c1], a[i]+b[c1+1], &amp;hellip; ,a[i]+b[c2])$&lt;/p&gt;
+&lt;p&gt;当你去做差分的时候会发现$a[i]$被减掉了。&lt;/p&gt;
+&lt;p&gt;就是&lt;/p&gt;
+&lt;p&gt;$gcd(a[i]+b[c1], b[c1+1]-b[c1], &amp;hellip;, b[c2]-b[c2-1])$&lt;/p&gt;
+&lt;p&gt;前一个数是网格上一个点，后面就是$b$的差分数组的一个区间。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://rafakang.github.io/p/atcoder%E6%B3%9B%E5%81%9A/image.png&#34;
+	width=&#34;1252&#34;
+	height=&#34;904&#34;
+	srcset=&#34;https://rafakang.github.io/p/atcoder%E6%B3%9B%E5%81%9A/image_hu1722367391632881689.png 480w, https://rafakang.github.io/p/atcoder%E6%B3%9B%E5%81%9A/image_hu9515741885819983690.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;138&#34;
+		data-flex-basis=&#34;332px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;那么一次对网格的查询可以剖成红色的行（对应$b$的差分数组的区间）、绿色的列（对应$a$的差分数组的一个区间），以及蓝色的格子（左上角）。&lt;/p&gt;
+&lt;p&gt;分别用区间查询数据结构（ST表，线段树）来做区间查询。&lt;/p&gt;
+&lt;p&gt;因此一次查询操作要在$a$差分里做区间查询、$b$差分里做区间查询以及和左上角的数，用这三个数来做GCD。&lt;/p&gt;
+&lt;h1 id=&#34;arc185eadjacent-gcd&#34;&gt;ARC185E.Adjacent GCD
 &lt;/h1&gt;&lt;p&gt;累了，做个水题。&lt;/p&gt;
 </description>
         </item>
