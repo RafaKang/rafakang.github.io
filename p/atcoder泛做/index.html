@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/will_hu3855859989501340760.png" width="300"
+                        <img src="/img/will_hu_1d6a5b1ba1812e20.png" width="300"
                             height="195" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -324,7 +324,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 58 分钟
+                    阅读时长: 59 分钟
                 </time>
             </div>
         
@@ -340,7 +340,7 @@
     
     
     <h1 id="atcoder泛做">Atcoder泛做
-</h1><h1 id="arc178ddelete-range-mexhttpsatcoderjpcontestsarc178tasksarc178_d"><a class="link" href="https://atcoder.jp/contests/arc178/tasks/arc178_d"  target="_blank" rel="noopener"
+</h1><h1 id="arc178ddelete-range-mex"><a class="link" href="https://atcoder.jp/contests/arc178/tasks/arc178_d"  target="_blank" rel="noopener"
     >ARC178D.Delete Range Mex</a>
 </h1><p>一个长度为$N$的排列$P$，每次选一个区间，然后把区间$Mex$从这个排列中移除。问有多少排列$P$能通过以上操作最终得到一个长度为$M$的序列$A$</p>
 <p>$M\leq N\leq500$</p>
@@ -481,7 +481,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：方向是对的，先根据题意找计数对象的特征。而且基本上分析差不多了，但是卡在枚举到$A$序列本身那个地方。实现的时候，这种维数比较多的转移写起来要非常非常小心且专心，每个决策对应的转移都要想得非常清楚，debug的时候要有耐心，手算即便很困难也不能弃疗。</p>
-<h1 id="abc349gmax-sum---maxhttpsatcoderjpcontestsabc348tasksabc348_g"><a class="link" href="https://atcoder.jp/contests/abc348/tasks/abc348_g"  target="_blank" rel="noopener"
+<h1 id="abc349gmax-sum---max"><a class="link" href="https://atcoder.jp/contests/abc348/tasks/abc348_g"  target="_blank" rel="noopener"
     >ABC349G.Max (Sum - Max)</a>
 </h1><p>有两个长度为$N$的序列$A$和$B$。给出一个长度$k$，选出$k$个下标组成集合$S$，求$\sum_{i \in S}A[i] - max_{i \in S}B[i]$。对于每个$k$，求这样的值</p>
 <p>假设就一个$k$，按$B$排序，显然就是一个经典数据结构问题。选一个最好的$i$，使得$A[i-1]$之前的前$k-1$大+$A[i]-B[i]$最大。</p>
@@ -1343,7 +1343,7 @@
 <p><img src="/p/atcoder%E6%B3%9B%E5%81%9A/VHDIbrlMRobLiwx4iIFcQK2TnTc.png"
 	width="2404"
 	height="223"
-	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/VHDIbrlMRobLiwx4iIFcQK2TnTc_hu9525586028940495151.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/VHDIbrlMRobLiwx4iIFcQK2TnTc_hu8295011649200645274.png 1024w"
+	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/VHDIbrlMRobLiwx4iIFcQK2TnTc_hu_7e5567689635815b.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/VHDIbrlMRobLiwx4iIFcQK2TnTc_hu_d06b0954a13b9cc9.png 1024w"
 	loading="lazy"
 	
 	
@@ -1353,7 +1353,7 @@
 	
 ></p>
 <p>单调性分治的做法是对于$[l,r]$直接暴力求一个$mid$，得到子区间的决策上下界，再求$[l,mid-1]$和$[mid+1,r]$。如果是这种$dp[i] = dp[j]+w(j,i)$的式子，在$dp[l..mid-1]$求解之前无法确定$dp[mid]$的值，单调性分治就会失效，所以经常见于分层的动态规划。</p>
-<h1 id="abc326gunlock-achievementhttpsatcoderjpcontestsabc326tasksabc326_g"><a class="link" href="https://atcoder.jp/contests/abc326/tasks/abc326_g"  target="_blank" rel="noopener"
+<h1 id="abc326gunlock-achievement"><a class="link" href="https://atcoder.jp/contests/abc326/tasks/abc326_g"  target="_blank" rel="noopener"
     >ABC326G.Unlock Achievement</a>
 </h1><p>$N$个技能，$M$个成就。技能升级需要花费，最高升五级。一个成就需要某些技能达到某些等级，获得某些回报。求最大的回报-花费是多少</p>
 <p>一句话：最大权闭合子图&hellip;</p>
@@ -1438,7 +1438,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：读题就建出模了，很典&hellip;</p>
-<h1 id="abc335gdiscrete-logarithm-problemshttpsatcoderjpcontestsabc335tasksabc335_g"><a class="link" href="https://atcoder.jp/contests/abc335/tasks/abc335_g"  target="_blank" rel="noopener"
+<h1 id="abc335gdiscrete-logarithm-problems"><a class="link" href="https://atcoder.jp/contests/abc335/tasks/abc335_g"  target="_blank" rel="noopener"
     >ABC335G.Discrete Logarithm Problems</a>
 </h1><p>给出一个数组$A$和质数$P$，找出数对$(i,j)$满足：存在$k$使得$A_{i}^k \equiv A_{j} \bmod P$。$N\leq 2 \times 10^5, P\leq 10^{13}$</p>
 <p>题目明示离散对数问题，考虑原根。一个奇素数必然存在原根，这个原根是模$P$运算的生成元，设这个原根是$g$，那么对于$[1,P-1]$中每个数，都是$g$的某次幂，且$g,g^2,&hellip;,g^{P-1}$是不同的数。</p>
@@ -1670,7 +1670,7 @@
 <p><img src="/p/atcoder%E6%B3%9B%E5%81%9A/ZQxgbVwU1ouDZsx65OecZhRindb.png"
 	width="1387"
 	height="218"
-	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/ZQxgbVwU1ouDZsx65OecZhRindb_hu13574829821947338433.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/ZQxgbVwU1ouDZsx65OecZhRindb_hu2811838616735160032.png 1024w"
+	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/ZQxgbVwU1ouDZsx65OecZhRindb_hu_4660e6b679282aed.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/ZQxgbVwU1ouDZsx65OecZhRindb_hu_89ad16ebf854f2bd.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
@@ -1681,7 +1681,7 @@
 		data-flex-basis="1526px"
 	
 ></p>
-<h1 id="arc179dportable-gatehttpsatcoderjpcontestsarc179tasksarc179_d"><a class="link" href="https://atcoder.jp/contests/arc179/tasks/arc179_d"  target="_blank" rel="noopener"
+<h1 id="arc179dportable-gate"><a class="link" href="https://atcoder.jp/contests/arc179/tasks/arc179_d"  target="_blank" rel="noopener"
     >ARC179D.Portable Gate</a>
 </h1><p>一棵$N$个节点的树，有一个棋子和传送门，任意节点开始遍历整棵树。有三种操作：</p>
 <ol>
@@ -1871,7 +1871,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：最重要的一步是合并操作3和操作1，这样传送门的决策就变少了，对于原题的分析就简化了。回传送门的操作没有额外花费，化简了终止状态。这样整个问题剩下的思路就很自然，从子树DP到换根DP都是经典问题。所以问题的解决要挖掘性质，方便分析或者程序处理。</p>
-<h1 id="abc332gnot-too-many-ballshttpsatcoderjpcontestsabc332tasksabc332_g"><a class="link" href="https://atcoder.jp/contests/abc332/tasks/abc332_g"  target="_blank" rel="noopener"
+<h1 id="abc332gnot-too-many-balls"><a class="link" href="https://atcoder.jp/contests/abc332/tasks/abc332_g"  target="_blank" rel="noopener"
     >ABC332G.Not Too Many Balls</a>
 </h1><p>有$N$种球，每种球有$A[i]$个。$M$个盒子，每种盒子有$B[i]$的容量。第$i$种球在第$j$个盒子里最多放$i \times j$个。问最多能放多少个球。</p>
 <p>$N \leq 500, M \leq 5 \times 10^5$</p>
@@ -1985,7 +1985,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：这个最小割的转化太惊人了。我是没想到的。但是是有端倪的，从本质上说这是一个完全二分图而且点权是一个简单的式子，应该会存在简单的做法。其实转化到最小割之后整个思路就很自然了，从复杂的集合枚举到找到集合最有用的特征，然后归约到已知问题，这是一个常见的CP题目分析法。</p>
-<h1 id="arc173dbracket-walkhttpsatcoderjpcontestsarc173tasksarc173_d"><a class="link" href="https://atcoder.jp/contests/arc173/tasks/arc173_d"  target="_blank" rel="noopener"
+<h1 id="arc173dbracket-walk"><a class="link" href="https://atcoder.jp/contests/arc173/tasks/arc173_d"  target="_blank" rel="noopener"
     >ARC173D.Bracket Walk</a>
 </h1><p>在一个$N$个点$M$条边的单向强连通图中，每条边要么是(要么是)。判定是否存在一个经过了所有边至少一次，且遍历顺序是一个合法的括号序列的环。$N \leq 4000, M\leq8000$</p>
 <p>首先这个环不一定非得是合法的括号序列，只要正反括号数量相等即可。设正反括号权值分别为1和-1，只要找到最小的负数前缀和，从这个点开始走，就是一个合法的括号序列了。</p>
@@ -2112,7 +2112,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：有点抽象的推理题。解法有点像局部搜索，假设有一个解，然后用这个解去靠近最优解，然后分析性质才能得到解的充要条件。CP题需要很多假设以及简单的暴力，要有抽象思考问题的能力。能不着眼于具体的case，眼光着眼于整个问题才能得到优秀的解法。</p>
-<h1 id="arc176dswap-permutationhttpsatcoderjpcontestsarc176tasksarc176_d"><a class="link" href="https://atcoder.jp/contests/arc176/tasks/arc176_d"  target="_blank" rel="noopener"
+<h1 id="arc176dswap-permutation"><a class="link" href="https://atcoder.jp/contests/arc176/tasks/arc176_d"  target="_blank" rel="noopener"
     >ARC176D.Swap Permutation</a>
 </h1><p>给出一个长度为$N$的排列$P$，每次操作任选两个不相等的下标$i$和$j$，交换$P[i]$和$P[j]$。求所有可能的$M$次操作后，$\sum_{i=1}^{N-1}|P[i]-P[i+1]|$值。</p>
 <p>只能说是学到新东西了。</p>
@@ -2551,8 +2551,7 @@ $(A_{other}, A_R)$对答案产生贡献，那么$A_{other}&gt;A_R$且$A_{other}\
 $(A_{L}, A_{other})$对答案产生贡献，那么$A_{other}&lt;A_L$且$A_{other}\neq A_R$。那么对于原先的一个顺序对$(A_L,A_R)$，提供的贡献就是$\frac{A_L-1}{N-2}$；对于一个逆序对$(A_L,A_R)$，提供的贡献是$\frac{A_L-2}{N-2}$
 $(A_{R}, A_{other})$对答案产生贡献，那么$A_{other}&lt;A_R$且$A_{other}\neq A_L$。那么对于原先的一个顺序对$(A_L,A_R)$，提供的贡献就是$\frac{A_R-2}{N-2}$；对于一个逆序对$(A_L,A_R)$，提供的贡献是$\frac{A_R-1}{N-2}$
 $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数都成立</p>
-<p>那么就直接在求顺序对和逆序对的时候直接计算贡献即可</p>
-</blockquote>
+<p>那么就直接在求顺序对和逆序对的时候直接计算贡献即可</p></blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2654,7 +2653,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 <p><img src="/p/atcoder%E6%B3%9B%E5%81%9A/G9jAbu92AoVhwuxdPV5cTSqFnog.png"
 	width="2407"
 	height="145"
-	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/G9jAbu92AoVhwuxdPV5cTSqFnog_hu174531514271775510.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/G9jAbu92AoVhwuxdPV5cTSqFnog_hu11409448726337830905.png 1024w"
+	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/G9jAbu92AoVhwuxdPV5cTSqFnog_hu_ed3cc90de95ad335.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/G9jAbu92AoVhwuxdPV5cTSqFnog_hu_2dec75a948a1c65d.png 1024w"
 	loading="lazy"
 	
 	
@@ -2663,7 +2662,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 		data-flex-basis="3984px"
 	
 ></p>
-<h1 id="arc163dsum-of-scchttpsatcoderjpcontestsarc163tasksarc163_d"><a class="link" href="https://atcoder.jp/contests/arc163/tasks/arc163_d"  target="_blank" rel="noopener"
+<h1 id="arc163dsum-of-scc"><a class="link" href="https://atcoder.jp/contests/arc163/tasks/arc163_d"  target="_blank" rel="noopener"
     >ARC163D.Sum of SCC</a>
 </h1><p>一个$N$个节点的竞赛图，需要有$M$条边是从小编号连到大编号。问所有满足条件的图，强连通分量（SCC）的总数是多少。</p>
 <p>$N\leq30, M\leq \frac{N(N-1)}{2}$</p>
@@ -2673,8 +2672,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 <p>直接计数很费劲的话，考虑能否构造一一映射。</p>
 <p>一个定理：</p>
 <blockquote>
-<p>考虑将图分为两个集合$A$和$B$($B$非空)，使得两个集合之间，只有$A$连到$B$的边。竞赛图的SCC个数，等价于这个集合划分方案数。</p>
-</blockquote>
+<p>考虑将图分为两个集合$A$和$B$($B$非空)，使得两个集合之间，只有$A$连到$B$的边。竞赛图的SCC个数，等价于这个集合划分方案数。</p></blockquote>
 <p>实际上这个定理是缩链之后的一个引理。因为划分集合的方案，等价于在这条链上按拓扑序一分为二，显然是SCC-1种切分。这样如果$B$不为空$A$可以为空，就恰好是SCC的个数。</p>
 <p>这样就可以考虑维护这个$A$集合和$B$集合。枚举$A$集合，每次加一个新节点进来只需要考虑两个决策——节点分在哪个集合中。发现新节点构造边的方案数实际上只跟$A$集合的大小有关，那么压缩$A$集合的状态为枚举大小。</p>
 <p>$dp[i][j][k]$表示前$i$个节点，$A$集合大小为$j$，满足条件的边有$k$个。</p>
@@ -2760,7 +2758,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：我是想不出来的&hellip;首先这个编号的限制我就没想明白，现在复盘一下觉得这是从小到大加点的一个提示。接下来是这个构造一一映射的过程，这确实计数题的一个比较典型的解法。由于SCC的结构很难用DP状态来表示，构造了这个一一映射，直接简化了问题，而且每个新节点的决策只有两种，太厉害了。感觉有的时候，有一些很冷门的知识点，如果能想到就能解决问题，比如这个竞赛图的集合划分方案，以及之前做过的一个数组LCM的问题——那道题需要知道若干数的最小公倍数的质因数分解中每个因数的指数是数组中该因数的最大指数，当然那道题我想到了，这个状态就可以用一个bitmask来表示。的确有时候需要这种灵感以及知识点，灵感这个东西靠经验，知识点就得靠积累了，多做题肯定是没错的。</p>
-<h1 id="abc321gelectric-circuithttpsatcoderjpcontestsabc321tasksabc321_g"><a class="link" href="https://atcoder.jp/contests/abc321/tasks/abc321_g"  target="_blank" rel="noopener"
+<h1 id="abc321gelectric-circuit"><a class="link" href="https://atcoder.jp/contests/abc321/tasks/abc321_g"  target="_blank" rel="noopener"
     >ABC321G.Electric Circuit</a>
 </h1><p>一个$N$个节点的图，两个长度为$M$的序列$R$和$B$。每次加边选择$R$和$B$中没被选择的一个，一共有$M!$种加边方法。求所有加边方法，最终形成的连通块数量的期望</p>
 <p>$M\leq 10^5, N\leq 17$</p>
@@ -2867,7 +2865,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：不能因为感觉困难就放弃思考放弃治疗啊！！！明明自己已经整理过反演相关的东西了，为什么放弃治疗了！！</p>
-<h1 id="arc165dsubstring-comparisonhttpsatcoderjpcontestsarc165tasksarc165_d"><a class="link" href="https://atcoder.jp/contests/arc165/tasks/arc165_d"  target="_blank" rel="noopener"
+<h1 id="arc165dsubstring-comparison"><a class="link" href="https://atcoder.jp/contests/arc165/tasks/arc165_d"  target="_blank" rel="noopener"
     >ARC165D.Substring Comparison</a>
 </h1><p>假设有一个长为$N$字符串$X$，给出$M$条限制，每条限制是$X[A_{i},B_i]$在字典序上比$X[C_i,D_i]$小。求是否有这样的字符串。</p>
 <p>$N\leq 2000, M\leq 2000$</p>
@@ -3068,7 +3066,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：我自己分析出来了，有点开心，这里有点后缀数组倍增的意思，实际上考虑LCP是字典序的典型解法。然后复杂度分析那块稍微卡住了，但是考虑了一下缩点，这样每轮甚至轮数都确定了，还是挺妙的。</p>
-<h1 id="arc168dmaximize-updatehttpsatcoderjpcontestsarc168tasksarc168_d"><a class="link" href="https://atcoder.jp/contests/arc168/tasks/arc168_d"  target="_blank" rel="noopener"
+<h1 id="arc168dmaximize-update"><a class="link" href="https://atcoder.jp/contests/arc168/tasks/arc168_d"  target="_blank" rel="noopener"
     >ARC168D.Maximize Update</a>
 </h1><p>在一行里有$N$个方格，有$M$种操作$L_i$和$R_i$，表示将$[L_i,R_i]$这个区间全染黑；如果这个区间已经黑了就不能染了。问最多能进行几次操作。</p>
 <p>$N\leq500$</p>
@@ -3188,7 +3186,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>总结一下：挺直觉的，但是国外给的难度评级比较高，难道区间DP是CN强项？当然如果要很严谨地证还是有点复杂。</p>
-<h1 id="arc162dsmallest-verticeshttpsatcoderjpcontestsarc162tasksarc162_d"><a class="link" href="https://atcoder.jp/contests/arc162/tasks/arc162_d"  target="_blank" rel="noopener"
+<h1 id="arc162dsmallest-vertices"><a class="link" href="https://atcoder.jp/contests/arc162/tasks/arc162_d"  target="_blank" rel="noopener"
     >ARC162D.Smallest Vertices</a>
 </h1><p>假设一棵以1为根的有根树有$N$个节点，每个节点的出度是$d_i$。</p>
 <p>求所有这样的树里面，子树的根节点是子树编号最小的那个点，这样的点的总数。</p>
@@ -3707,7 +3705,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 <p><img src="/p/atcoder%E6%B3%9B%E5%81%9A/VEeXbhHDXoyU9dxBEixcwte1nzc.png"
 	width="2451"
 	height="230"
-	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/VEeXbhHDXoyU9dxBEixcwte1nzc_hu6357240925057150794.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/VEeXbhHDXoyU9dxBEixcwte1nzc_hu6222286584381611784.png 1024w"
+	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/VEeXbhHDXoyU9dxBEixcwte1nzc_hu_b53efd47399c778f.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/VEeXbhHDXoyU9dxBEixcwte1nzc_hu_b6ebdc9a4854c683.png 1024w"
 	loading="lazy"
 	
 	
@@ -4715,7 +4713,7 @@ $$dp[0] * 2M^2-M^2$$<div class="highlight"><div class="chroma">
 <p><img src="/p/atcoder%E6%B3%9B%E5%81%9A/image.png"
 	width="1252"
 	height="904"
-	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/image_hu1722367391632881689.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/image_hu9515741885819983690.png 1024w"
+	srcset="/p/atcoder%E6%B3%9B%E5%81%9A/image_hu_d97e2c94a48d8670.png 480w, /p/atcoder%E6%B3%9B%E5%81%9A/image_hu_affce97ea3df3314.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
@@ -4729,9 +4727,76 @@ $$dp[0] * 2M^2-M^2$$<div class="highlight"><div class="chroma">
 <p>那么一次对网格的查询可以剖成红色的行（对应$b$的差分数组的区间）、绿色的列（对应$a$的差分数组的一个区间），以及蓝色的格子（左上角）。</p>
 <p>分别用区间查询数据结构（ST表，线段树）来做区间查询。</p>
 <p>因此一次查询操作要在$a$差分里做区间查询、$b$差分里做区间查询以及和左上角的数，用这三个数来做GCD。</p>
-<h1 id="arc185eadjacent-gcd">ARC185E.Adjacent GCD
-</h1><p>累了，做个水题。</p>
-
+<h1 id="arc095cmul">ARC095C.MUL
+</h1><p>有$N$个宝石，价值为$a[i]$，有正有负，如果砸掉了宝石$i$，那么下标为$i$的所有倍数的宝石都消失了；</p>
+<p>求能留下的宝石价值最大。</p>
+<p>我们反过来看，如果宝石$i$被留下，那么$i$的所有约数都得被留下，这就形成了闭合子图的概念。</p>
+<p>因此解法即为最大权闭合子图。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">read</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">a</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">read</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">Flow</span> <span class="n">G</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">S</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">T</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">j</span> <span class="o">*</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">G</span><span class="p">.</span><span class="n">addEdge</span><span class="p">(</span><span class="n">j</span> <span class="o">*</span> <span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">Flow</span><span class="o">::</span><span class="n">INF</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ll</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">G</span><span class="p">.</span><span class="n">addEdge</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">ans</span> <span class="o">+=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">G</span><span class="p">.</span><span class="n">addEdge</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="o">-</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">cut</span> <span class="o">=</span> <span class="n">G</span><span class="p">.</span><span class="n">flow</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">T</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ans</span> <span class="o">-=</span> <span class="n">cut</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ans</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -4790,6 +4855,28 @@ $$dp[0] * 2M^2-M^2$$<div class="highlight"><div class="chroma">
 
     
 
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/atcoder%E6%B3%9B%E5%81%9A-2/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Atcoder泛做 2</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
      
     
         
@@ -4843,7 +4930,7 @@ $$dp[0] * 2M^2-M^2$$<div class="highlight"><div class="chroma">
         
             2020 - 
         
-        2024 KSY
+        2025 KSY
     </section>
     
     <section class="powerby">
