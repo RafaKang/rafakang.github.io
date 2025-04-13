@@ -4367,6 +4367,7 @@ $(A_{other},A_{other})$，产生$\frac{1}{2}$的贡献，且对于每一对数�
 <p>设$E(X_i)$表示从$i$第一次走到$i+1$的期望次数。</p>
 <p>那么有$E(X_i)=\frac{1}{2}+\frac{1}{2}(1+E(X_{i-1}+E(X_i))=E(X_{i-1})+2$，有$E(0)=1$。</p>
 <p>于是第一次从0走到$M$的期望就是$\sum_{i=0}^{M-1}E(i)$，答案是$M^2$.走过去再回来相当于两次随机游走，因此是$2M^2$。</p>
+<p>由于最后一次走到末尾就可以停，不需要回到0点，因此总答案是</p>
 $$dp[0] * 2M^2-M^2$$<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
